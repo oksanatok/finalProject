@@ -1,0 +1,81 @@
+h3 {
+  color: rgb(11, 159, 223);
+}
+h2,
+h4 {
+  color: rgb(30, 127, 168);
+}
+
+.col-6 {
+  font-weight: 200;
+}
+.container {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(74, 69, 69);
+}
+.card {
+  border-color: rgb(11, 159, 223);
+}
+.me-2 {
+  width: 35%;
+  border-radius: 20px;
+}
+.btn-outline-success {
+  color: whitesmoke;
+  background-color: rgb(255, 106, 0);
+  border-color: rgb(255, 106, 0);
+  border-radius: 20px;
+  width: 6em;
+}
+.col-3 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 15pt;
+}
+
+.today,
+.dateToday,
+.time,
+.city {
+  color: rgb(30, 127, 168);
+  font-size: 20pt;
+}
+.city {
+  font-weight: bolder;
+}
+.card {
+  margin-top: 20px;
+}
+.todayTemp {
+  font-size: 22pt;
+  position: relative;
+}
+.units {
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: rgb(30, 127, 168);
+}
+.weather-description img {
+  width: 35px;
+  height: 35px;
+}
+.fa-wind {
+  padding-left: 10px;
+  margin-right: 4pt;
+}
+.fa-temperature-half {
+  margin-right: 2pt;
+  font-size: 22pt;
+}
+#description {
+  display: inline-block;
+}
+#description::first-letter {
+  text-transform: uppercase;
+}
+.active {
+  color: black;
+  cursor: default;
+}
