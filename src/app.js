@@ -49,9 +49,14 @@ form.addEventListener("submit", handleSearch);
 //Forecast
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = `<div class="row">
+  let forecastHTML = `<div class="row">`;
+  let days = ["Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
                   <div class="col-2">
-                    <div class="weather-forecast-date">Tue</div>
+                    <div class="weather-forecast-date">${day}</div>
                     <img
                       src="src/clear-sky-day.png"
                       alt="Clear Sky"
@@ -62,8 +67,13 @@ function displayForecast() {
                       <span class="weather-forecast-temperatures-min">12°</span>
                     </div>
                   </div>
-                </div>
+                
 `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
 }
 displayForecast();
 
