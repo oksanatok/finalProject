@@ -46,6 +46,27 @@ currentTime.innerHTML = now.toLocaleTimeString([], {
 let form = document.querySelector(".d-flex");
 form.addEventListener("submit", handleSearch);
 
+//Forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `<div class="row">
+                  <div class="col-2">
+                    <div class="weather-forecast-date">Tue</div>
+                    <img
+                      src="src/clear-sky-day.png"
+                      alt="Clear Sky"
+                      width="42"
+                    />
+                    <div class="weather-forecast-temperatures">
+                      <span class="weather-forecast-temperatures-max">18°</span>
+                      <span class="weather-forecast-temperatures-min">12°</span>
+                    </div>
+                  </div>
+                </div>
+`;
+}
+displayForecast();
+
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let iconElement = document.querySelector("#weather-icon");
@@ -113,3 +134,5 @@ let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", showFahrTemp);
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
+search("Berlin");
