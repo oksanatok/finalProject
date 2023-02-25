@@ -146,7 +146,7 @@ function search(event) {
 
   currentCity.innerHTML = searchResult.value;
 }
-
+searchCity("Berlin");
 // Convert units
 function showFahrTemp(event) {
   event.preventDefault();

@@ -28,7 +28,7 @@
           <h3>Weather in</h3>
           <div class="container">
             <div class="row">
-              <div class="col-8">
+              <div class="col-12">
                 <form class="d-flex">
                   <input
                     class="form-control me-2"
@@ -44,22 +44,18 @@
                 </form>
 
                 <br />
-                <div class="city">
+                <div class="col-12 city">
                   <h2>Your City</h2>
                 </div>
               </div>
-              <div class="col-6 today"><h4>Today</h4></div>
+              <div class="col-4 today"><h4>Today</h4></div>
 
-              <div class="col-3">
+              <div class="col-2 temperature-col">
                 <span class="fa-solid fa-temperature-half">
                   <span class="todayTemp"></span>
                 </span>
 
-                <span class="units">
-                  <a href="#" id="celsius" class="active">°C </a
-                  ><span class="line"> |</span
-                  ><a href="#" id="fahrenheit">°F</a></span
-                >
+                <span class="units" id="celsius">°C </span>
               </div>
               <div class="col-3 weather-description">
                 <img
@@ -71,10 +67,10 @@
               </div>
               <div class="col-12 dateToday"><h4>Date</h4></div>
 
-              <div class="col-6 time">
+              <div class="col-4 time">
                 <h4><em>Current time</em></h4>
               </div>
-              <div class="col-3">
+              <div class="col-2 humidity-col">
                 <span class="fa-solid fa-droplet"></span>
                 <span class="humidity"> </span> %
               </div>
@@ -82,6 +78,8 @@
                 <span class="fa-solid fa-wind"></span
                 ><span class="wind"> </span> km/h
               </div>
+              <br />
+              <br />
               <div>
                 <div class="weather-forecast" id="forecast"></div>
               </div>
